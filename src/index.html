@@ -6,7 +6,31 @@
     <link rel="stylesheet" href="./output.css" />
     <script defer src="./assets/fontawesome/js/solid.min.js"></script>
     <script defer src="./assets/fontawesome/js/fontawesome.min.js"></script>
-    <title>Tailwind Css</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Tailwind Checkpoint</title>
+
+    <style>
+      .hero {
+        background-image: url("./assets/images/hero.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .categories {
+        display: grid;
+        grid-column: auto;
+        padding: 1rem;
+      }
+      .categories ul {
+        list-style: none;
+      }
+    </style>
   </head>
   <body>
     <!-- header -->
@@ -29,5 +53,298 @@
         </div>
       </nav>
     </header>
+
+    <!-- Hero Section -->
+    <section class="hero h-screen">
+      <div
+        class="flex justify-center items-center h-full text-2xl text-blue-50 font-bold"
+      >
+        <h1>
+          Book Our Band
+          <span
+            class="text-red-500 p-4 hover:text-red-400 cursor-pointer hover:bg-red-900/10 transition-colors"
+            >RIGHT NOW</span
+          >
+        </h1>
+      </div>
+    </section>
+
+    <!-- Categories -->
+
+    <section class="categories">
+      <div class="flex flex-wrap justify-center mt-10">
+        <!-- card 1 -->
+        <div class="p-4 max-w-sm">
+          <div
+            class="flex rounded-lg h-full dark:bg-gray-800 bg-yellow-300 p-8 flex-col"
+          >
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <h2 class="text-white dark:text-white text-lg font-medium">
+                Feature 1
+              </h2>
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+              <p
+                class="leading-relaxed text-base text-white dark:text-gray-300"
+              >
+                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                taxidermy. Gastropub indxgo juice poutine.
+              </p>
+              <a
+                href="#"
+                class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="p-4 max-w-sm">
+          <div
+            class="flex rounded-lg h-full dark:bg-gray-800 bg-yellow-300 p-8 flex-col"
+          >
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <h2 class="text-white dark:text-white text-lg font-medium">
+                Feature 2
+              </h2>
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+              <p
+                class="leading-relaxed text-base text-white dark:text-gray-300"
+              >
+                Lorem ipsum dolor sit amet. In quos laboriosam non neque eveniet
+                33 nihil molestias. Rem perspiciatis iure ut laborum inventore
+                et maxime amet.
+              </p>
+              <a
+                href="#"
+                class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="p-4 max-w-sm">
+          <div
+            class="flex rounded-lg h-full dark:bg-gray-800 bg-yellow-300 p-8 flex-col"
+          >
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <h2 class="text-white dark:text-white text-lg font-medium">
+                Feature 3
+              </h2>
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+              <p
+                class="leading-relaxed text-base text-white dark:text-gray-300"
+              >
+                Lorem ipsum dolor sit amet. In quos laboriosam non neque eveniet
+                33 nihil molestias. Rem perspiciatis iure ut laborum inventore
+                et maxime amet.
+              </p>
+              <a
+                href="#"
+                class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="bg-gray-800 py-4 text-gray-400">
+        <div class="container px-4 mx-auto">
+          <div class="-mx-4 flex flex-wrap justify-between">
+            <div class="px-4 my-4 w-full xl:w-1/5">
+              <a href="/" class="block w-56 mb-10"> </a>
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                expedita eius quibusdam! Dignissimos explicabo temporibus, a eos
+                eum molestias incidunt ut officiis error sit iusto!
+              </p>
+            </div>
+
+            <div class="px-4 my-4 w-full sm:w-auto">
+              <div>
+                <h2
+                  class="inline-block text-2xl pb-4 mb-4 border-b-4 border-blue-600"
+                >
+                  Company
+                </h2>
+              </div>
+              <ul class="leading-8">
+                <li><a href="#" class="hover:text-blue-400">About Us</a></li>
+                <li>
+                  <a href="#" class="hover:text-blue-400"
+                    >Terms &amp; Conditions</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-blue-400">Privacy Policy</a>
+                </li>
+                <li><a href="#" class="hover:text-blue-400">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="px-4 my-4 w-full sm:w-auto">
+              <div>
+                <h2
+                  class="inline-block text-2xl pb-4 mb-4 border-b-4 border-blue-600"
+                >
+                  Blog
+                </h2>
+              </div>
+              <ul class="leading-8">
+                <li>
+                  <a href="#" class="hover:text-blue-400"
+                    >Lorem ipsum dolor sit amet.</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-blue-400"
+                    >Lorem ipsum dolor sit amet.</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-blue-400"
+                    >Lorem ipsum dolor sit amet.</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-blue-400"
+                    >Lorem ipsum dolor sit amet.</a
+                  >
+                </li>
+                <li><a href="#" class="hover:text-blue-400">See More</a></li>
+              </ul>
+            </div>
+            <div class="px-4 my-4 w-full sm:w-auto xl:w-1/5">
+              <div>
+                <h2
+                  class="inline-block text-2xl pb-4 mb-4 border-b-4 border-blue-600"
+                >
+                  Connect With Us
+                </h2>
+              </div>
+              <a
+                href="#"
+                class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-blue-400 hover:border-blue-400"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a
+                href="#"
+                class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-blue-400 hover:border-blue-400"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a
+                href="#"
+                class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-blue-400 hover:border-blue-400"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-blue-400 hover:border-blue-400"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-indigo-700 py-4 text-gray-100">
+        <div class="container mx-auto px-4">
+          <div class="-mx-4 flex flex-wrap justify-between">
+            <div class="px-4 w-full text-center sm:w-auto sm:text-left">
+              Copyright &copy; 2024 - 2022 Tailwindow. All Rights Reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
